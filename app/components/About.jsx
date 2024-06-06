@@ -1,0 +1,45 @@
+const AboutMe = () => {
+  return (
+    <div id="aboutme" className="py-12 m-0 bg-gray-300">
+      <div className="container py-5">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
+            <img
+              className="border border-secondary rounded-full hidden sm:block"
+              src="/1627828268152.jpg"
+              alt="profilepicture"
+              width="375"
+              height="375"
+            />
+          </div>
+          <div className="lg:w-1/2 py-22">
+            <h2 className="text-4xl mb-10 text-center lg:text-center">
+              About Me
+            </h2>
+            <p className="text-lg text-center font-extralight lg:text-center mb-8 p-4">
+              As a Full Stack Developer, I am eager to build impactful web
+              applications. Proficient in React, HTML5, CSS3, Node.js, MongoDB,
+              Express.js I am dedicated to merging design and functionality for
+              user-friendly solutions. Excited about collaborative learning and
+              bringing a fresh perspective to innovative projects.
+            </p>
+            <p className="text-lg text-center lg:text-center">
+              <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                <a
+                  href="https://drive.google.com/file/d/1PIUIGKYShZgTXElEAUgUiea9MgdrhkTd/view?usp=drive_link"
+                  target="_blank"
+                  download="../../public/Aditya_Mishra.pdf"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutMe;
