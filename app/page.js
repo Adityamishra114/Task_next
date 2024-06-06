@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Experience from "./components/Experience";
 import HeroSection from "./components/HeroSection";
+import Leadership from "./components/Leadership";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Experience />
       <Project />
+      <Leadership />
     </div>
   );
 }
