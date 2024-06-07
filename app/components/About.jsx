@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const AboutMe = () => {
   return (
     <div id="aboutme" className="py-12 m-0 bg-gray-300">
       <div className="container py-5">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
-            <img
+            <Image
               className="border border-secondary rounded-full hidden sm:block"
               src="/1627828268152.jpg"
               alt="profilepicture"
@@ -25,7 +27,7 @@ const AboutMe = () => {
               time I am working as FrontEnd Developer intern on Arity
               Technologies. My goal is to build highly performant applications
               that solve real-world probelms and provides users with an awesome
-              experience.When I'm not working, I'm probably hanging out with my
+              experience.When I&apos;m not working, I&apos;m probably hanging out with my
               friends, listening music, watching web-series. I am always love
               with a cup of Tea.
             </p>

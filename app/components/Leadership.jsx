@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Leadership = () => {
   return (
     <div id="leadership" className="py-3 m-0 bg-white">
@@ -25,7 +27,7 @@ const Leadership = () => {
             <div className="carousel slide">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img
+                  <Image
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
@@ -39,7 +41,7 @@ const Leadership = () => {
                   </div>
                 </div>
                 <div className="carousel-item ">
-                  <img
+                  <Image
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
@@ -53,7 +55,7 @@ const Leadership = () => {
                   </div>
                 </div>
                 <div className="carousel-item ">
-                  <img
+                  <Image
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
@@ -67,7 +69,7 @@ const Leadership = () => {
                   </div>
                 </div>
                 <div className="carousel-item ">
-                  <img
+                  <Image
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
