@@ -1,12 +1,14 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/Task_next" : "";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     {
-      src: "/images/crud.png",
+      src: `${basePath}/images/crud.png`,
       alt: "Crud ",
       width: 700,
       height: 700,
@@ -14,7 +16,7 @@ const Carousel = () => {
       description: " CRUD stands for Create, Read, Update, and Delete.",
     },
     {
-      src: "/images/estate.png",
+      src: `${basePath}/images/estate.png`,
       alt: "Estate",
       width: 700,
       height: 700,
@@ -22,7 +24,7 @@ const Carousel = () => {
       description: "User Can add and sell property",
     },
     {
-      src: "/images/netflix.png",
+      src: `${basePath}/images/netflix.png`,
       alt: "Netflix",
       width: 700,
       height: 700,

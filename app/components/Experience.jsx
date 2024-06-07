@@ -14,13 +14,13 @@ const Experience = () => {
           </h2>
           <div className="flex flex-wrap sm:grid sm:grid-cols-1 items-center  md:grid-cols-2 gap-4 text-center ">
             <ExperienceCard
-              src={`${basePath}/images/synl.jpg`}
+              src={`${basePath}/images/synl.png`}
               alt="Synergy"
               title="Data Annotation"
               date="Dec 2021 – july 2022"
             />
             <ExperienceCard
-              src={`${basePath}/images/tech.jpg`}
+              src={`${basePath}/images/tech.png`}
               alt="Techaronic"
               title="Frontend Developer"
               date="Oct 202 2– April 2024"
