@@ -8,7 +8,7 @@ const nextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
-    path: isProd ? "/Task_next/_next/image/" : "_next/images/",
+    path: isProd ? "/Task_next/" : "",
   },
 };
 

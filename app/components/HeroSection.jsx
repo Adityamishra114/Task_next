@@ -30,7 +30,7 @@ const HeroSection = () => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [ ]);
+  }, []);
   return (
     <div
       id="home"
@@ -91,13 +91,11 @@ const HeroSection = () => {
             />
           </Link>
         </div>
-        <button
-          className="bg-transparent hover:bg-white text-white-300 text-lg font-semibold hover:text-slate-700 py-2 px-4 border border-white-500 hover:border-transparent rounded"
-          href="/#aboutme"
-          role="button"
-          aria-label="Learn more about me"
-        >
-          More about me
+        <button className="bg-transparent hover:bg-white text-white-300 text-lg font-semibold hover:text-slate-700 py-2 px-4 border border-white-500 hover:border-transparent rounded">
+          <Link href="/#aboutme" role="button" aria-label="Learn more about me">
+            {" "}
+            More about me
+          </Link>
         </button>
       </div>
     </div>
