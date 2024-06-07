@@ -104,7 +104,7 @@ const SkillItem = ({ skill, level }) => (
       <div className="progress-bar-animation progress h-4 bg-gray-200 rounded">
         <div
           role="progressbar"
-          className="progress-bar bg-blue-600 h-4 rounded"
+          className="progress-bar bg-blue-600 h-4 rounded transition-all duration-500 ease-in-out"
           aria-valuenow={level}
           aria-valuemin="0"
           aria-valuemax="100"
