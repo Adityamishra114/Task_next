@@ -31,7 +31,7 @@ const Footer = () => {
             rel="noopener"
             href="https://adityamishra114.github.io/Task_next/"
             aria-label="My GitHub"
-            className="inline-block bg-black text-white px-2 py-1 rounded"
+            className="inline-block bg-black text-xs md:text-sm text-white px-2 py-1 rounded"
           >
             Aditya Kumar Mishra
           </Link>{" "}
