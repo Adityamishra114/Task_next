@@ -8,7 +8,7 @@ const AboutMe = () => {
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
             <Image
               className="border border-secondary rounded-full hidden sm:block"
-              src="/images/Profile.JPG"
+              src="/Task_next/images/Profile.jpg"
               alt="profilepicture"
               width="375"
               height="375"
