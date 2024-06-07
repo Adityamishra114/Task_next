@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -33,14 +34,14 @@ const AboutMe = () => {
             </p>
             <p className="text-lg text-center lg:text-center">
               <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                <a
+                <Link
                   href="https://drive.google.com/file/d/1PIUIGKYShZgTXElEAUgUiea9MgdrhkTd/view?usp=drive_link"
                   target="_blank"
                   download="../../public/Aditya_Mishra.pdf"
                   rel="noopener noreferrer"
                 >
                   Resume
-                </a>
+                </Link>
               </button>
             </p>
           </div>
