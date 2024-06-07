@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 const Experience = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/";
+  // const imagePath = `${basePath}${src}`;
   return (
     <section className="py-12 w-full block bg-white">
       <div className=" mx-auto">
@@ -10,7 +12,7 @@ const Experience = () => {
           </h2>
           <div className="flex flex-wrap sm:grid sm:grid-cols-1  md:grid-cols-2 gap-4 text-center ">
             <ExperienceCard
-              src="/images/synl.jpg"
+              src={`${basePath}/images/synl.jpg`}
               alt="Synergy"
               title="Data Annotation"
               date="Dec 2021 – july 2022"
