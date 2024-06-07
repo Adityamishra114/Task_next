@@ -6,7 +6,7 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     {
-      src: "/crud.png",
+      src: "/images/crud.png",
       alt: "Crud ",
       width: 700,
       height: 700,
@@ -14,7 +14,7 @@ const Carousel = () => {
       description: " CRUD stands for Create, Read, Update, and Delete.",
     },
     {
-      src: "/estate.png",
+      src: "/images/estate.png",
       alt: "Estate",
       width: 700,
       height: 700,
@@ -22,7 +22,7 @@ const Carousel = () => {
       description: "User Can add and sell property",
     },
     {
-      src: "/netflix.png",
+      src: "/images/netflix.png",
       alt: "Netflix",
       width: 700,
       height: 700,

@@ -4,6 +4,7 @@ const nextConfig = {
   assetPrefix: isProd ? "/Task_next/" : "",
   basePath: isProd ? "/Task_next/" : "",
   output: "export",
+  trailingSlash: true,
   distDir: "dist",
   images: {
     unoptimized: true,

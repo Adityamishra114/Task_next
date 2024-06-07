@@ -161,7 +161,7 @@ const Projects = () => {
                 </div>
                 <p className="card-text">
                   <Link
-                    href={`https://github.com/Mohd-shahid-iqbal/${project.title}/stargazers`}
+                    href={`https://adityamishra114.github.io/${project.title}`}
                     passHref
                     className="text-dark text-decoration-none"
                   >
