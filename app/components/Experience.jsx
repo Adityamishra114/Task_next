@@ -1,4 +1,9 @@
 import Image from "next/image";
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/Task_next" : "";
+const generateImagePath = (src) => {
+  return `${basePath}${src}`;
+};
 
 const Experience = () => {
   return (
@@ -10,7 +15,7 @@ const Experience = () => {
           </h2>
           <div className="flex flex-wrap sm:grid sm:grid-cols-1  md:grid-cols-2 gap-4 text-center ">
             <ExperienceCard
-              src="/images/synl.jpg"
+              src={generateImagePath("/images/synl.jpg")}
               alt="Synergy"
               title="Data Annotation"
               date="Dec 2021 – july 2022"
