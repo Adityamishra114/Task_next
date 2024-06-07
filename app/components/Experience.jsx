@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/Task_next" : "";
+
+
 const Experience = () => {
   return (
     <section className="py-12 w-full block bg-white">
@@ -10,19 +14,19 @@ const Experience = () => {
           </h2>
           <div className="flex flex-wrap sm:grid sm:grid-cols-1 items-center  md:grid-cols-2 gap-4 text-center ">
             <ExperienceCard
-              src="/images/synl.jpg"
+              src={`${basePath}/images/synl.jpg`}
               alt="Synergy"
               title="Data Annotation"
               date="Dec 2021 – july 2022"
             />
             <ExperienceCard
-              src="/images/tech.jpg"
+              src={`${basePath}/images/tech.jpg`}
               alt="Techaronic"
               title="Frontend Developer"
               date="Oct 202 2– April 2024"
             />
             <ExperienceCard
-              src="/images/car.png"
+              src={`${basePath}/images/car.png`}
               alt="Car24"
               title="Full stack Developer"
               date="March 2024 – Present"

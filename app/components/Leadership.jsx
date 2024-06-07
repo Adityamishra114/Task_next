@@ -21,11 +21,17 @@ const Leadership = () => {
               to solve complex technical problems and think creatively, I am
               always up-to-date with the latest developments in React and
               related technologies, and am able to innovate and inspire a
-              positive, collaborative work environment.
+              positive, collaborative work environment. I am also passionate
+              about mentoring and training other developers to help them develop
+              their skills and achieve their goals. With my ability to solve
+              complex technical problems and think creatively, I am always
+              up-to-date with the latest developments in React and related
+              technologies, and am able to innovate and inspire a positive,
+              collaborative work environment.
             </p>
           </div>
           <div className="col-md-6">
-           <Carousel/>
+            <Carousel />
           </div>
         </div>
       </div>
