@@ -1,6 +1,6 @@
 import Image from "next/image";
 const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/Task_next" : "";
+const basePath = isProd ? "/Task_next/" : "";
 const generateImagePath = (src) => {
   return `${basePath}${src}`;
 };
