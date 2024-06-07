@@ -8,7 +8,9 @@ const AboutMe = () => {
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
             <Image
               className="border border-secondary rounded-full hidden sm:block"
-              src="/Profile.JPG"
+              src={`${
+                process.env.NODE_ENV === "production" ? "/Task_next" : ""
+              }/Profile.JPG`}
               alt="profilepicture"
               width="375"
               height="375"
