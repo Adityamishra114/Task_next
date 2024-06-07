@@ -30,7 +30,7 @@ const HeroSection = () => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [phrases ]);
+  }, [ ]);
   return (
     <div
       id="home"
