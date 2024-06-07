@@ -7,8 +7,8 @@ const nextConfig = {
   trailingSlash: true,
   distDir: "dist",
   images: {
-    unoptimized: true,
-    path: "/Task_next",
+    loader: "imgix",
+    path: isProd ? "/Task_next/public/image/" : "public/image/",
   },
 };
 
