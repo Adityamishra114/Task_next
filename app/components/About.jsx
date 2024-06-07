@@ -1,4 +1,6 @@
 import Image from "next/image";
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/Task_next" : "";
 
 const AboutMe = () => {
   return (
@@ -8,7 +10,7 @@ const AboutMe = () => {
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
             <Image
               className="border border-secondary rounded-full hidden sm:block"
-              src="/images/Profile.jpg"
+              src={`${basePath}/images/Profile.jpg`}
               alt="profilepicture"
               width="375"
               height="375"
