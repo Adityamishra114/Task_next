@@ -104,11 +104,11 @@ const SkillItem = ({ skill, level }) => (
       <div className="progress-bar-animation progress h-4 bg-gray-200 rounded">
         <div
           role="progressbar"
-          className="progress-bar bg-blue-600 h-4 rounded transition-all duration-500 ease-in-out"
+          className="progress-bar-fill h-full bg-blue-600 rounded-full"
           aria-valuenow={level}
           aria-valuemin="0"
           aria-valuemax="100"
-          style={{ width: `${level}%` }}
+          style={{ width: `${level}%`, transition: "width 1s ease-in-out" }}
         ></div>
       </div>
     </div>

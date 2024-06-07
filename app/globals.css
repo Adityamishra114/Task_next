@@ -58,3 +58,6 @@ body {
   );
   background-size: 1200% 1200%;
 }
+.progress-bar-fill {
+  transition: width 1s ease-in-out;
+}
