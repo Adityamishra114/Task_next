@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -9,7 +8,7 @@ const AboutMe = () => {
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
             <Image
               className="border border-secondary rounded-full hidden sm:block"
-              src="https://adityamishra114.github.io/Personal-Portfolio/Aditya%20Mishra.jpg"
+              src="/1627828268152.jpg"
               alt="profilepicture"
               width="375"
               height="375"
@@ -28,20 +27,20 @@ const AboutMe = () => {
               time I am working as FrontEnd Developer intern on Arity
               Technologies. My goal is to build highly performant applications
               that solve real-world probelms and provides users with an awesome
-              experience.When I&apos;m not working, I&apos;m probably hanging out with my
-              friends, listening music, watching web-series. I am always love
-              with a cup of Tea.
+              experience.When I&apos;m not working, I&apos;m probably hanging
+              out with my friends, listening music, watching web-series. I am
+              always love with a cup of Tea.
             </p>
             <p className="text-lg text-center lg:text-center">
               <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                <Link
+                <a
                   href="https://drive.google.com/file/d/1PIUIGKYShZgTXElEAUgUiea9MgdrhkTd/view?usp=drive_link"
                   target="_blank"
-                  download="../../public/Aditya_Mishra.pdf"
+                  download="/Aditya_Mishra.pdf"
                   rel="noopener noreferrer"
                 >
                   Resume
-                </Link>
+                </a>
               </button>
             </p>
           </div>

@@ -14,7 +14,7 @@ const Carousel = () => {
   return (
     <Slider {...settings}>
       <div>
-        <Image src="/1627828268152.jpg" alt="First slide" className="w-full" />
+        <Image src="/1627828268152.jpg" width={600} height={400} alt="First slide" className="w-full" />
         <div className="carousel-caption">
           <h3>First slide label</h3>
           <p>

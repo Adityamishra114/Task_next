@@ -31,6 +31,8 @@ const Leadership = () => {
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
+                    width={300}
+                    height={300}
                   />
                   <div className="carousel-caption">
                     <h3>First slide label</h3>
@@ -45,6 +47,8 @@ const Leadership = () => {
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
+                    width={600}
+                    height={400}
                   />
                   <div className="carousel-caption">
                     <h3>First slide label</h3>
@@ -59,6 +63,8 @@ const Leadership = () => {
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
+                    width={300}
+                    height={300}
                   />
                   <div className="carousel-caption">
                     <h3>First slide label</h3>
@@ -73,6 +79,8 @@ const Leadership = () => {
                     className="d-block w-full"
                     src="https://media.assettype.com/filmcompanion%2F2024-04%2Fccbe7bc1-8a06-433b-abdd-24d0dab1ee98%2FScreenshot_2024_04_25_at_17_18_52.png?w=1200&auto=format%2Ccompress&fit=max"
                     alt="First slide"
+                    width={300}
+                    height={300}
                   />
                   <div className="carousel-caption">
                     <h3>First slide label</h3>
