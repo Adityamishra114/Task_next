@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4  font-extralight items-center  gap-12 flex justify-between md:justify-start">
         <Link
-          href="/Task_next/#home"
+          href="/#home"
           className="text-white text-2xl font-bold cursor-pointer"
         >
           Aditya
@@ -65,7 +65,7 @@ const Navbar = () => {
           <ul className="flex flex-col md:flex-row md:space-x-6">
             <li>
               <Link
-                href="/Task_next/#projects"
+                href="/#projects"
                 className="block md:inline-block text-white mt-4 md:mt-0 cursor-pointer"
               >
                 Projects
@@ -83,7 +83,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/Task_next/#aboutme"
+                href="/#aboutme"
                 className="block md:inline-block text-white mt-4 md:mt-0 cursor-pointer"
               >
                 About
@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/Task_next/#skills"
+                href="/#skills"
                 className="block md:inline-block text-white mt-4 md:mt-0 cursor-pointer"
               >
                 Skills
