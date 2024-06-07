@@ -4,13 +4,13 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState("hard-skills");
 
   return (
-    <div className="container py-5" id="skills">
-      <div className="py-5 px-8 container  mx-auto">
+    <div className="container w-full py-5" id="skills">
+      <div className="py-5 w-full md:px-12 px-6 container  mx-auto">
         <h2 className="text-5xl font-extralight mb-8 pb-5 text-center">
           Skills
         </h2>
         <ul
-          className="flex justify-around text-center mx-auto md:px-14 px-8 py-4 "
+          className="flex w-full justify-around text-center mx-auto md:px-14 px-6 py-4 "
           role="tablist"
         >
           <li
@@ -47,7 +47,7 @@ const Skills = () => {
               aria-selected={activeTab === "soft-skills"}
               className={`px-4 py-2 border border-slate-100 justify-center p-3  text-center items-center w-full ${
                 activeTab === "soft-skills"
-                  ? "border-b-1 border-slate-100  text-blue-800"
+                  ? "border-b-0 border-slate-100  text-blue-800"
                   : "border-t-0 border-l-0 border-r-0 border-slate-100"
               } focus:outline-none`}
               onClick={() => setActiveTab("soft-skills")}
@@ -56,7 +56,7 @@ const Skills = () => {
             </button>
           </li>
         </ul>
-        <div className=" mx-auto px-12 py-4 mt-4 flex-start">
+        <div className=" mx-auto w-full md:px-12 px-6 py-4 mt-4 ">
           <div
             role="tabpanel"
             aria-labelledby="skills-tabs-tab-hard-skills"
@@ -64,7 +64,7 @@ const Skills = () => {
               activeTab === "hard-skills" ? "block" : "hidden"
             }`}
           >
-            <div className="pt-3 px-1 flex flex-wrap">
+            <div className="pt-2 flex flex-wrap">
               <SkillItem skill="React" level="80" />
               <SkillItem skill="JavaScript" level="80" />
               <SkillItem skill="Node Js" level="65" />
