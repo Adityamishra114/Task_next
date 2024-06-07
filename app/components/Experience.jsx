@@ -15,7 +15,7 @@ const Experience = () => {
                 date="Dec 2021 – july 2022"
               />
               <ExperienceCard
-                src="/tech.jpg"
+                src="/tech.JPG"
                 alt="Techaronic"
                 title="Frontend Developer"
                 date="Oct 202 2– April 2024"
