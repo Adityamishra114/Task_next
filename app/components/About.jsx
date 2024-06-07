@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "../../public/images/Profile.JPG";
+import Profile from "../../public/images/Profile.JPG";
 
 const AboutMe = () => {
   return (
@@ -9,7 +9,7 @@ const AboutMe = () => {
           <div className="lg:w-1/2 lg:flex lg:items-center justify-center">
             <Image
               className="border border-secondary rounded-full hidden sm:block"
-              src={profile}
+              src={Profile}
               alt="profilepicture"
               width="375"
               height="375"
