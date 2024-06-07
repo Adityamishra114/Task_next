@@ -1,4 +1,5 @@
-import { useState } from "react";
+"use client";
+import { useEffect, useState } from "react";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("hard-skills");
@@ -26,8 +27,8 @@ const Skills = () => {
               aria-selected={activeTab === "hard-skills"}
               className={`px-4 py-2 border border-slate-100 justify-center p-3  text-center items-center w-full ${
                 activeTab === "hard-skills"
-                  ? "border-b-0 border-slate-100 text-blue-800"
-                  : "border-t-0 border-l-0 border-r-0 border-slate-100"
+                  ? "border-b-0 border-slate-200 text-blue-800"
+                  : "border-t-0 border-l-0 border-r-0 border-slate-200"
               } focus:outline-none`}
               onClick={() => setActiveTab("hard-skills")}
             >
@@ -47,8 +48,8 @@ const Skills = () => {
               aria-selected={activeTab === "soft-skills"}
               className={`px-4 py-2 border border-slate-100 justify-center p-3  text-center items-center w-full ${
                 activeTab === "soft-skills"
-                  ? "border-b-0 border-slate-100  text-blue-800"
-                  : "border-t-0 border-l-0 border-r-0 border-slate-100"
+                  ? "border-b-0 border-slate-200  text-blue-800"
+                  : "border-t-0 border-l-0 border-r-0 border-slate-200"
               } focus:outline-none`}
               onClick={() => setActiveTab("soft-skills")}
             >
@@ -97,22 +98,33 @@ const Skills = () => {
   );
 };
 
-const SkillItem = ({ skill, level }) => (
-  <div className="w-full md:w-1/2 p-2">
-    <div style={{ width: "95%" }}>
-      <p className="lead mb-1 mt-2">{skill}</p>
-      <div className="progress-bar-animation progress h-4 bg-gray-200 rounded">
-        <div
-          role="progressbar"
-          className="progress-bar-fill h-full bg-blue-600 rounded-full"
-          aria-valuenow={level}
-          aria-valuemin="0"
-          aria-valuemax="100"
-          style={{ width: `${level}%`, transition: "width 1s ease-in-out" }}
-        ></div>
+const SkillItem = ({ skill, level }) => {
+  const [animationWidth, setAnimationWidth] = useState(0);
+
+  useEffect(() => {
+    setAnimationWidth(level);
+  }, [level]);
+
+  return (
+    <div className="w-full md:w-1/2 p-2">
+      <div style={{ width: "95%" }}>
+        <p className="lead mb-1 mt-2">{skill}</p>
+        <div className="progressBarAnimation progress h-4 bg-gray-200 rounded">
+          <div
+            role="progressbar"
+            className="progress-bar-fill h-full bg-blue-600 rounded-full"
+            aria-valuenow={level}
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style={{
+              width: `${animationWidth}%`,
+              transition: "width 1s ease-in-out"
+            }}
+          ></div>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Skills;

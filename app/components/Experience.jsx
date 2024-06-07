@@ -1,9 +1,4 @@
 import Image from "next/image";
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/Task_next/" : "";
-const generateImagePath = (src) => {
-  return `${basePath}${src}`;
-};
 
 const Experience = () => {
   return (
@@ -13,9 +8,9 @@ const Experience = () => {
           <h2 className=" mb-5  py-6 font-extralight text-center text-5xl">
             Experiences
           </h2>
-          <div className="flex flex-wrap sm:grid sm:grid-cols-1  md:grid-cols-2 gap-4 text-center ">
+          <div className="flex flex-wrap sm:grid sm:grid-cols-1 items-center  md:grid-cols-2 gap-4 text-center ">
             <ExperienceCard
-              src={generateImagePath("/images/synl.jpg")}
+              src="/images/synl.jpg"
               alt="Synergy"
               title="Data Annotation"
               date="Dec 2021 – july 2022"
@@ -42,7 +37,7 @@ const Experience = () => {
 const ExperienceCard = ({ src, alt, title, date }) => {
   return (
     <div className=" w-full md:w-1/2 lg:w-1/2 mx-auto ">
-      <div className=" p-5 rounded-lg flex-col items-center  ">
+      <div className=" p-5 rounded-lg flex-col  items-center  ">
         <Image
           src={src}
           alt={alt}
