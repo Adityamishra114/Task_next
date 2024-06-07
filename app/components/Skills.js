@@ -4,8 +4,8 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState("hard-skills");
 
   return (
-    <div className="container w-full py-5" id="skills">
-      <div className="py-5 w-full md:px-12 px-6 container  mx-auto">
+    <div className="container w-full mx-auto py-5" id="skills">
+      <div className="py-5 w-full md:px-12 px-6 container ">
         <h2 className="text-5xl font-extralight mb-8 pb-5 text-center">
           Skills
         </h2>
