@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import HeroSection from "./components/HeroSection";
@@ -18,7 +18,7 @@ export default function Home() {
       <Project />
       <Leadership />
       <Skills />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
